@@ -1,52 +1,59 @@
 import { useState } from "react";
-import { X, Menu } from "lucide-react";
+import { X, Menu, Download } from "lucide-react";
+
+const navLinks = [
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+];
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header className="flex flex-row items-center justify-between sm:justify-around p-2">
-      <a
-        href="/"
-        className="flex items-center text-xl font-semibold hover:text-green-600"
-      >
-        Ayoub Morghi
-      </a>
-      <nav className="hidden sm:flex justify-between items-center gap-4">
-        <a href="#" className="hover:text-green-600 uppercase">
-          Home
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <div className="max-w-7xl mx-auto flex items-center justify-between p-4 md:px-8">
+        {/* Logo */}
+        <a href="/" className="text-xl font-bold tracking-tight hover:text-green-600 transition-colors">
+          Ayoub Morghi
         </a>
-        <a href="#" className="hover:text-green-600 uppercase">
-          About
-        </a>
-        <a href="#" className="hover:text-green-600 uppercase">
-          Contact
-        </a>
-      </nav>
-      <button className="hidden sm:block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
-        Download CV
-      </button>
-      <nav className="sm:hidden flex flex-col items-end gap-1 font-semibold">
-        <button
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <a key={link.name} href={link.href} className="text-sm font-medium text-gray-600 hover:text-green-600 uppercase transition-colors">
+              {link.name}
+            </a>
+          ))}
+          <button className="bg-green-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-green-700 transition-all shadow-sm">
+            CV
+          </button>
+        </nav>
+
+        {/* Mobile Toggle */}
+        <button 
           onClick={() => setShowMenu(!showMenu)}
-          className="sm:hidden font-bold text-xl hover:text-green-600"
+          className="md:hidden p-2 text-gray-600"
+          aria-label="Toggle Menu"
         >
-          {showMenu ? <X /> : <Menu />}
+          {showMenu ? <X size={28} /> : <Menu size={28} />}
         </button>
-        {showMenu && (
-          <>
-            <a href="#" className="hover:text-green-600">
-              Home
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      {showMenu && (
+        <nav className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 flex flex-col p-6 gap-4 animate-in slide-in-from-top-2">
+          {navLinks.map((link) => (
+            <a key={link.name} href={link.href} onClick={() => setShowMenu(false)} className="text-lg font-semibold text-gray-800 border-b border-gray-50 pb-2">
+              {link.name}
             </a>
-            <a href="#" className="hover:text-green-600">
-              About
-            </a>
-            <a href="#" className="hover:text-green-600">
-              Contact
-            </a>
-          </>
-        )}
-      </nav>
+          ))}
+          <button className="flex items-center justify-center gap-2 bg-green-600 text-white p-3 rounded-xl font-bold">
+            <Download size={18} /> Download CV
+          </button>
+        </nav>
+      )}
     </header>
   );
 }
