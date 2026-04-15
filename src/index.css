@@ -4,3 +4,9 @@
 @theme {
   --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
