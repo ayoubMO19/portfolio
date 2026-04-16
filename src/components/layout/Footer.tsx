@@ -12,7 +12,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="flex flex-col items-center justify-between sm:justify-around sm:flex-row p-6 gap-4">
+        <footer className="flex flex-col items-center bg-gray-100 justify-between sm:justify-around sm:flex-row p-6 gap-4">
             <p className="text-gray-600 text-sm">© {currentYear} Ayoub Morghi. All rights reserved.</p>
             <div className="flex flex-row items-center text-lg gap-4 text-gray-700 uppercase">
                 {SOCIAL_LINKS.map((link) => {

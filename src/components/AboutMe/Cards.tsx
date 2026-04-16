@@ -11,7 +11,7 @@ export default function Cards() {
             icon: "🧪"
         },
         {
-            title: "Data & Infrastructure",
+            title: "Data and Infrastructure",
             description: "Gestión de bases de datos SQL/NoSQL y despliegues con Docker. Experiencia optimizando rendimiento en entornos reales.",
             icon: "⚙️"
         }

@@ -7,7 +7,7 @@ export default function Projects() {
                 
                 <div className="flex flex-col gap-4">
                     <span className="text-sm font-mono text-green-600 font-bold uppercase tracking-tighter">
-                        // 02. Selected Work
+                        // 03. Selected Work
                     </span>
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
                         Proyectos destacados
