@@ -16,15 +16,15 @@ export default function Hero() {
         <div className="flex-1 space-y-8 z-10 text-center md:text-left">
           <header className="space-y-3">
             <p className="text-[11px] tracking-[0.3em] font-mono text-green-600 font-bold uppercase">
-              Full Stack Developer
+              Backend Developer
             </p>
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-              <span className="text-green-600">{title}</span><br />
-              <span className="text-slate-800">{subtitle}</span>
+            <h1 className="font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+              <span className="text-5xl md:text-7xl text-green-600">{title}</span><br />
+              <span className="text-4xl md:text-6xl text-slate-800">{subtitle}</span>
             </h1>
           </header>
 
-          <p className="max-w-md mx-auto md:mx-0 text-lg text-slate-600 leading-relaxed">
+          <p className="max-w-lg mx-auto md:mx-0 text-lg text-slate-600 leading-relaxed">
             {description}
           </p>
 

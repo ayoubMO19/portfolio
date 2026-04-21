@@ -11,8 +11,8 @@ import frontend_ecommerce from "../assets/frontend_ecommerce.png";
 export const portfolioData: PortfolioData = {
   hero: {
     title: "Ayoub Morghi.",
-    subtitle: "Ofreciendo soluciones tecnológicas.",
-    description: "Especializado en crear aplicaciones robustas, escalables y con una experiencia de usuario impecable.",
+    subtitle: "Backend enfocado en APIs, datos y rendimiento.",
+    description: "Backend Developer con experiencia en Node.js en producción, trabajando con APIs, datos y optimización de rendimiento. Actualmente enfocado en Java y Spring Boot.",
     profileImage: profileImage,
     socialLinks: [
       { name: "LinkedIn", href: "https://www.linkedin.com/in/ayoub-morghi-ouhda/", icon: FaLinkedin },
@@ -111,7 +111,7 @@ export const portfolioData: PortfolioData = {
       {
         title: "VEXA E-Commerce Backend",
         category: "Java Backend Architecture",
-        description: "API REST completa orientada a producción desarrollada con Spring Boot. Arquitectura por dominios con separación estricta de capas (Controller, Service, Repository, DTOs). Implementación de autenticación JWT stateless, control de acceso por roles y flujo de pagos real con Stripe mediante PaymentIntents y Webhooks verificados. Diseño enfocado a seguridad (no confiar en el cliente) y consistencia de datos.",
+        description: "API REST completa en Spring Boot con autenticación JWT y control de roles. Integración de pagos reales con Stripe (PaymentIntent + Webhooks verificados). Arquitectura por capas y lógica de negocio segura sin confiar en el cliente.",
         tech: ["Java 21", "Spring Boot", "PostgreSQL"],
         image: backend_ecommerce,
         github: "https://github.com/ayoubMO19/e-commerce-backend",
@@ -120,7 +120,7 @@ export const portfolioData: PortfolioData = {
       {
         title: "VEXA E-Commerce Frontend",
         category: "Frontend Engineering",
-        description: "SPA desarrollada en React con TypeScript, enfocada en rendimiento y experiencia de usuario. Integración completa con backend mediante APIs REST, gestión de estado asíncrono con TanStack Query y sistema de pagos con Stripe Elements. Optimización de rendimiento (100/100 Core Web Vitals) mediante lazy loading y code splitting.",
+        description: "SPA en React con TypeScript conectada a backend real. Autenticación persistente, integración de pagos con Stripe y gestión de estado con TanStack Query. Rendimiento optimizado (100/100 Core Web Vitals).",
         tech: ["React", "TypeScript", "Tailwind CSS"],
         image: frontend_ecommerce,
         github: "https://github.com/ayoubMO19/e-commerce-frontend",
@@ -140,7 +140,6 @@ export const portfolioData: PortfolioData = {
 
   contact: {
     sectionLabel: "// 04. Contact",
-    title: "¿Hablamos de tu próximo proyecto?",
     subtitle: "Actualmente estoy abierto a nuevas oportunidades como Desarrollador. Si buscas a alguien comprometido con la calidad y la arquitectura, mi bandeja de entrada está abierta.",
     email: "ayoubmorghiouhda@gmail.com",
     socialLinks: [

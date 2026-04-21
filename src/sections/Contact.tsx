@@ -4,7 +4,7 @@ import { Phone, Copy, Check } from 'lucide-react';
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
-  const { sectionLabel, title, subtitle, email, socialLinks } = useContactData();
+  const { sectionLabel, subtitle, email, socialLinks } = useContactData();
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
@@ -19,8 +19,9 @@ export default function Contact() {
         <span className="text-sm font-mono text-green-600 font-bold uppercase tracking-[0.3em] mb-4 block">
           {sectionLabel}
         </span>
+        
         <h2 className="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter mb-8">
-          {title}
+          ¿Hablamos de tu <br /> <span className="text-green-600">próximo proyecto?</span>
         </h2>
         
         <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mb-16">

@@ -79,7 +79,6 @@ export interface ProjectsData {
 // Contact Section Types
 export interface ContactData {
   sectionLabel: string;
-  title: string;
   subtitle: string;
   email: string;
   socialLinks: Array<{
