@@ -23,11 +23,9 @@ export default function Hero() {
               <span className="text-4xl md:text-6xl text-slate-800">{subtitle}</span>
             </h1>
           </header>
-
           <p className="max-w-lg mx-auto md:mx-0 text-lg text-slate-600 leading-relaxed">
             {description}
           </p>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a href={ctaButtons.projects.href} className="bg-green-600 text-white px-8 py-4 rounded-md font-bold hover:bg-green-700 transition-all shadow-lg shadow-green-200 flex items-center justify-center gap-2">
               <ctaButtons.projects.icon size={20} /> {ctaButtons.projects.text}
@@ -37,7 +35,6 @@ export default function Hero() {
             </a>
           </div>
         </div>
-
         <div className="relative group mt-8 md:mt-0">
           <div className="absolute -top-4 -left-4 w-16 h-16 border-t-2 border-l-2 border-slate-300 group-hover:border-green-500 transition-all duration-300" />
           <div className="absolute -bottom-4 -right-4 w-16 h-16 border-b-2 border-r-2 border-green-500/50 group-hover:border-green-600 transition-all duration-300" />

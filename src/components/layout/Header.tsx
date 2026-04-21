@@ -14,11 +14,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4 md:px-8">
-        
         <a href="/" className="text-xl font-bold tracking-tight hover:text-green-600 transition-colors">
           Ayoub Morghi<span className="text-green-600">.</span>
         </a>
-
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a 
@@ -37,7 +35,6 @@ export default function Header() {
             <Download size={18} /> <p>CV</p>
           </a>
         </nav>
-
         <button 
           onClick={() => setShowMenu(!showMenu)}
           className="md:hidden p-2 text-gray-600 transition-transform active:scale-90"
@@ -45,7 +42,6 @@ export default function Header() {
           {showMenu ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-
       <div 
         className={`
           md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg overflow-hidden transition-all duration-300 ease-in-out

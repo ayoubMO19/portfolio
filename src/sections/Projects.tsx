@@ -6,7 +6,6 @@ export default function Projects() {
     return (
         <section className="relative w-full bg-gray-100 py-12 md:py-20" id="projects">
             <div className="max-w-7xl w-full mx-auto flex flex-col px-6 gap-12 lg:gap-16">
-
                 <div className="flex flex-col gap-4">
                     <span className="text-sm font-mono text-green-600 font-bold uppercase tracking-tighter">
                         {sectionLabel}
@@ -18,7 +17,6 @@ export default function Projects() {
                         {description}
                     </p>
                 </div>
-
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     {projects.map((project, index) => (
                         <div key={index} className="group flex flex-col bg-white rounded-[2.5rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">

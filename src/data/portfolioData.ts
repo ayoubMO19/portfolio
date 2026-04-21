@@ -2,8 +2,6 @@ import { SiGithub, SiX } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { Monitor } from "lucide-react";
 import type { PortfolioData } from "../types/portfolio";
-
-// Import assets
 import profileImage from "../assets/profile.png";
 import backend_ecommerce from "../assets/backend_ecommerce.png";
 import frontend_ecommerce from "../assets/frontend_ecommerce.png";

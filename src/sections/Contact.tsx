@@ -15,22 +15,16 @@ export default function Contact() {
   return (
     <section className="relative w-full bg-white py-12 md:py-20" id="contact">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        
         <span className="text-sm font-mono text-green-600 font-bold uppercase tracking-[0.3em] mb-4 block">
           {sectionLabel}
         </span>
-        
         <h2 className="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter mb-8">
           ¿Hablamos de tu <br /> <span className="text-green-600">próximo proyecto?</span>
         </h2>
-        
         <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mb-16">
           {subtitle}
         </p>
-
         <div className="flex flex-col items-center gap-8">
-          
-          {/* Email Copiable */}
           <div className="group relative flex items-center gap-4 bg-gray-50 border border-gray-100 p-2 pl-6 rounded-full hover:bg-white hover:shadow-xl transition-all duration-300">
             <span className="text-gray-900 font-bold text-sm md:text-lg">{email}</span>
             <button 
@@ -46,8 +40,6 @@ export default function Contact() {
               </span>
             )}
           </div>
-
-          {/* Botonera de redes sociales */}
           <div className="flex flex-wrap justify-center gap-6 mt-8">
             {socialLinks.map((link) => (
               <a
@@ -65,8 +57,6 @@ export default function Contact() {
                 <span className="font-bold text-sm uppercase tracking-widest">{link.name}</span>
               </a>
             ))}
-            
-            {/* Teléfono */}
             <a 
               href="tel:+34631515999" 
               className="flex items-center gap-3 px-6 py-3 bg-white border border-gray-100 rounded-2xl text-gray-600 hover:text-green-600 hover:border-green-600 hover:shadow-md transition-all"
