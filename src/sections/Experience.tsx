@@ -1,48 +1,8 @@
 import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { useExperienceData } from '../hooks/usePortfolioData';
 
 export default function Experience() {
-    const experiences = [
-        {
-            title: "Desarrollador Backend Java (Freelance)",
-            company: "Proyectos Independientes",
-            period: "Abril 2026 — Actualidad",
-            location: "Remoto",
-            description: "Especialización en el ecosistema Java. Desarrollo de APIs REST robustas utilizando Spring Boot, asegurando la calidad mediante testing unitario y de integración.",
-            tech: ["Java 21", "Spring Boot", "PostgreSQL", "JUnit 5", "Mockito"],
-        },
-        {
-            title: "Backend Developer & Automation (Freelance)",
-            company: "Sistemas de Automatización",
-            period: "Enero 2026 — Abril 2026",
-            location: "Remoto",
-            description: "Desarrollo de sistemas de extracción de datos masivos mediante crawlers y headless browsers. Automatización de flujos y procesamiento de datos energéticos.",
-            tech: ["Node.js", "Playwright", "Crawlee", "Cron Jobs"],
-        },
-        {
-            title: "Backend Developer",
-            company: "Pylon Data (Startup)",
-            period: "Feb 2024 — Jun 2025",
-            location: "Remoto",
-            description: "Mantenimiento de servicios críticos en producción. Optimización de rendimiento (~30%) en consultas complejas y diseño de microservicios escalables.",
-            tech: ["Node.js", "MySQL", "MongoDB", "InfluxDB", "Docker"],
-        },
-        {
-            title: "Técnico Superior DAM",
-            company: "IES Joan Coromines",
-            period: "2022 — 2024",
-            location: "Benicarló",
-            description: "Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma. Especialización en desarrollo de software y gestión de bases de datos.",
-            tech: ["Java", "SQL", "Spring Boot", "Arquitectura Software"],
-        },
-        {
-            title: "Técnico Medio SMR",
-            company: "IES Joan Coromines",
-            period: "2020 — 2022",
-            location: "Benicarló",
-            description: "Ciclo Formativo de Grado Medio en Sistemas Microinformáticos y Redes. Fundamentos de hardware, redes y soporte técnico.",
-            tech: ["Redes", "Hardware", "Sistemas Operativos", "Soporte"],
-        }
-    ];
+    const { sectionLabel, title, subtitle, experiences } = useExperienceData();
 
     return (
         <section className="relative w-full bg-white py-12 md:py-20" id="experience">
@@ -51,11 +11,14 @@ export default function Experience() {
                 {/* Header */}
                 <div className="flex flex-col gap-4 mb-16">
                     <span className="text-sm font-mono text-green-600 font-bold uppercase tracking-tighter">
-                        // 03. History
+                        {sectionLabel}
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
-                        Experiencia y Formación
-                    </h2>
+                    <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+                        {title}
+                    </h1>
+                    <p className="text-gray-600 max-w-2xl text-lg">
+                        {subtitle}
+                    </p>
                 </div>
 
                 {/* Timeline Container */}
@@ -88,12 +51,17 @@ export default function Experience() {
                                 <p className="text-gray-600 leading-relaxed max-w-3xl">
                                     {exp.description}
                                 </p>
-
                                 {/* Tech Used */}
-                                <div className="flex flex-wrap gap-2 mt-4">
+                                <div className="flex flex-wrap gap-x-5 gap-y-2 mt-6 pt-5 border-t border-gray-100/80">
                                     {exp.tech.map((t, i) => (
-                                        <span key={i} className="text-[11px] font-mono font-bold text-gray-400 uppercase tracking-wider">
-                                            # {t}
+                                        <span 
+                                            key={i} 
+                                            className="text-[11px] font-mono font-bold text-green-600 uppercase tracking-[0.15em] flex items-center group/tech"
+                                        >
+                                            <span className="text-green-400 mr-1.5 transition-transform group-hover/tech:scale-125">
+                                                {'>'}
+                                            </span>
+                                            {t}
                                         </span>
                                     ))}
                                 </div>

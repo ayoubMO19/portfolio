@@ -1,9 +1,9 @@
 import Header from './components/layout/Header.tsx';
-import Hero from './pages/sections/Hero/Hero.tsx';
-import AboutMe from './pages/sections/AboutMe/AboutMe.tsx';
-import Projects from './pages/sections/Projects/Projects.tsx';
-import Experience from './pages/sections/Experience/Experience.tsx';
-import Contact from './pages/sections/Contact/Contact.tsx';
+import Hero from './sections/Hero.tsx';
+import AboutMe from './sections/AboutMe.tsx';
+import Projects from './sections/Projects.tsx';
+import Experience from './sections/Experience.tsx';
+import Contact from './sections/Contact.tsx';
 import Footer from './components/layout/Footer.tsx';
 import './App.css';
 
