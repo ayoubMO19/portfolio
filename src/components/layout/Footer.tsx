@@ -5,7 +5,7 @@ const SOCIAL_LINKS = [
     { name: "LinkedIn", href: "https://www.linkedin.com/in/ayoub-morghi-ouhda/", icon: <FaLinkedin /> },
     { name: "GitHub", href: "https://github.com/ayoubmo19", icon: <SiGithub /> },
     { name: "X", href: "https://x.com/ayoubmorghi", icon: <SiX /> },
-    { name: "Email", href: "mailto:ayoubmorghi@gmail.com", icon: <SiGmail /> },
+    { name: "Email", href: "mailto:ayoubmorghiouhda@gmail.com", icon: <SiGmail /> },
 ];
 
 const Footer = () => {
