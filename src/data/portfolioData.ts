@@ -9,8 +9,8 @@ import frontend_ecommerce from "../assets/frontend_ecommerce.png";
 export const portfolioData: PortfolioData = {
   hero: {
     title: "Ayoub Morghi.",
-    subtitle: "Backend enfocado en APIs, datos y rendimiento.",
-    description: "Backend Developer con experiencia en Node.js en producción, trabajando con APIs, datos y optimización de rendimiento. Actualmente enfocado en Java y Spring Boot.",
+    subtitle: "Backend enfocado en Node.js, APIs y sistemas de datos.",
+    description: "Backend Developer con experiencia en Node.js en producción, trabajando con APIs REST, procesamiento de datos y optimización de rendimiento.",
     profileImage: profileImage,
     socialLinks: [
       { name: "LinkedIn", href: "https://www.linkedin.com/in/ayoub-morghi-ouhda/", icon: FaLinkedin },
@@ -18,16 +18,16 @@ export const portfolioData: PortfolioData = {
       { name: "X", href: "https://x.com/AyoubMorghi", icon: SiX },
     ],
     technologies: [
-      { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-      { name: "Spring", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
       { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
       { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
       { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
       { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
       { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
       { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+      { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      { name: "Spring", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
     ],
     ctaButtons: {
       projects: { text: "Ver Proyectos", href: "#projects", icon: Monitor },
@@ -39,8 +39,8 @@ export const portfolioData: PortfolioData = {
     sectionLabel: "// 01. About Me",
     title: "Backend Engineering",
     description: [
-      "Desarrollador backend con experiencia en sistemas reales en producción, trabajando con Node.js en entornos de startup y resolviendo problemas de rendimiento, datos y escalabilidad.",
-      "Actualmente enfocado en Java y Spring Boot, aplicando buenas prácticas de arquitectura, seguridad y diseño de APIs robustas. Prioridad en código mantenible, separación de responsabilidades y consistencia de dominio.",
+      "Desarrollador backend con experiencia en sistemas en producción con Node.js, trabajando en procesamiento de datos, APIs REST y sistemas asíncronos.",
+      "Experiencia en rendimiento, automatización de procesos y diseño de servicios backend. Enfoque en código mantenible, separación de responsabilidades y arquitectura clara.",
     ],
     specializations: [
       {
@@ -50,7 +50,7 @@ export const portfolioData: PortfolioData = {
       },
       {
         title: "Software Quality",
-        description: "Testing con JUnit y buenas prácticas para código mantenible y predecible.",
+        description: "Diseño de código mantenible, testing y buenas prácticas en servicios backend.",
         icon: "🧪",
       },
       {
@@ -71,7 +71,7 @@ export const portfolioData: PortfolioData = {
         company: "Pylon Data (Startup energética)",
         period: "Feb 2024 — Jun 2025",
         location: "Benicarló, Castellón",
-        description: "Desarrollo y mantenimiento de APIs REST en entorno de producción para sistemas de monitorización energética. Diseño de microservicios para procesamiento de datos y optimización de rendimiento en operaciones críticas (~30%). Trabajo con grandes volúmenes de datos y sistemas reales en producción.",
+        description: "Desarrollo de APIs REST en Node.js en producción para sistemas energéticos. Procesamiento de datos y lógica de negocio, integración con RabbitMQ para tareas asíncronas y extracción de datos vía scraping y APIs externas. Persistencia en MongoDB e InfluxDB y optimización de rendimiento (~30%).",
         tech: ["Node.js", "TypeScript", "MySQL", "MongoDB", "InfluxDB", "Docker", "Git"],
       },
       {
@@ -138,7 +138,7 @@ export const portfolioData: PortfolioData = {
 
   contact: {
     sectionLabel: "// 04. Contact",
-    subtitle: "Actualmente estoy abierto a nuevas oportunidades como Desarrollador. Si buscas a alguien comprometido con la calidad y la arquitectura, mi bandeja de entrada está abierta.",
+    subtitle: "Disponible para oportunidades como Backend Developer.",
     email: "ayoubmorghiouhda@gmail.com",
     socialLinks: [
       {
