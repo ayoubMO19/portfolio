@@ -16,14 +16,13 @@ export default function Hero() {
         <div className="flex-1 space-y-8 z-10 text-center md:text-left">
           <header className="space-y-3">
             <p className="text-[11px] tracking-[0.3em] font-mono text-green-600 font-bold uppercase">
-              Backend Developer
+              Full Stack Developer
             </p>
-            <h1 className="font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-              <span className="text-5xl md:text-7xl text-green-600">{title}</span><br />
-              <span className="text-4xl md:text-6xl text-slate-800">{subtitle}</span>
-            </h1>
+            {/* Separa el título y el subtítulo */}
+            <h1 className="font-extrabold tracking-tight text-green-600 leading-[1.1] text-5xl md:text-7xl">{title}</h1>
+            <h2 className="font-extrabold tracking-tight leading-[1.1] text-2xl md:text-4xl text-slate-800">{subtitle}</h2>
           </header>
-          <p className="max-w-lg mx-auto md:mx-0 text-lg text-slate-600 leading-relaxed">
+          <p className="max-w-xl mx-auto md:mx-0 text-lg text-slate-600 leading-relaxed">
             {description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -42,7 +41,7 @@ export default function Hero() {
             <img
               src={profileImage}
               alt="Ayoub Morghi"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+              className="w-full h-full object-cover transition-all duration-700 ease-in-out scale-100 group-hover:scale-105"
             />
             <div className="absolute right-4 top-1/2 -translate-y-1/2 flex flex-col gap-4 opacity-0 group-hover:opacity-100 md:opacity-100 transition-opacity">
               {socialLinks.map((link) => (
